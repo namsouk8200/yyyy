@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>캠핑마켓 - 공주대 학생 50% 세일</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo">🏕️</span>
+        <h1>캠핑마켓</h1>
+      </div>
+      <nav class="nav">
+        <a href="#products">상품</a>
+        <a href="#about">소개</a>
+      </nav>
+      <div class="cart">
+        <button id="cartBtn" aria-label="장바구니 보기">🛒 <span id="cartCount">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="sale-banner">
+    <div class="container">
+      <strong>공주대 학생 50% 세일</strong>
+      <span>학생증 제시 시 적용 • 한정 수량</span>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="products" class="products">
+      <article class="card" data-name="접이식 캠핑 체어" data-price="39000">
+        <img src="assets/chair.png" alt="접이식 캠핑 체어" />
+        <div class="info">
+          <h3>접이식 캠핑 체어</h3>
+          <p class="desc">튼튼한 원목 프레임과 패브릭 등받이, 휴대용 폴딩 디자인.</p>
+          <div class="price">
+            <span class="original">₩39,000</span>
+            <span class="student">학생가 ₩19,500</span>
+          </div>
+          <button class="add-to-cart">장바구니 담기</button>
+        </div>
+      </article>
+
+      <article class="card" data-name="미니 폴딩 테이블" data-price="49000">
+        <img src="assets/table.png" alt="미니 폴딩 테이블" />
+        <div class="info">
+          <h3>미니 폴딩 테이블</h3>
+          <p class="desc">우든 상판과 스틸 프레임의 안정적 구조. 감성 캠핑 필수템.</p>
+          <div class="price">
+            <span class="original">₩49,000</span>
+            <span class="student">학생가 ₩24,500</span>
+          </div>
+          <button class="add-to-cart">장바구니 담기</button>
+        </div>
+      </article>
+
+      <article class="card" data-name="알루미늄 트레이(대)" data-price="7000">
+        <img src="assets/tray.png" alt="알루미늄 트레이(대)" />
+        <div class="info">
+          <h3>알루미늄 트레이(대)</h3>
+          <p class="desc">바비큐/오븐 겸용 1회용 트레이. 야외 조리 및 설거지 최소화.</p>
+          <div class="price">
+            <span class="original">₩7,000</span>
+            <span class="student">학생가 ₩3,500</span>
+          </div>
+          <button class="add-to-cart">장바구니 담기</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>우리의 약속</h2>
+      <ul>
+        <li>필드 테스트를 거친 실속형 캠핑용품만 판매합니다.</li>
+        <li>모든 상품은 7일 이내 단순변심도 무료 반품.</li>
+        <li>공주대 학생은 상시 50% 할인(학생증 필요).</li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="cartDrawer" class="cart-drawer" aria-hidden="true" role="dialog">
+    <div class="drawer-header">
+      <h3>장바구니</h3>
+      <button id="closeCart" aria-label="장바구니 닫기">✖</button>
+    </div>
+    <div id="cartItems" class="drawer-body"></div>
+    <div class="drawer-footer">
+      <div class="total">합계: <span id="cartTotal">₩0</span></div>
+      <button id="checkout" class="checkout">결제하기</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 캠핑마켓 • 단조로운 무채색 테마</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
